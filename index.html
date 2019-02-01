@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bank">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bank App Full</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js" charset="utf-8"></script>
+  <script src="js/routes.js" charset="utf-8"></script>
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h2>Bank App Full</h2>
+  <a href="#/" class="btn btn-primary">Accounts</a>
+  <a href="#/add" class="btn btn-warning">Add Account</a>
+  <a href="#/editdelete" class="btn btn-danger">Edit/Delete</a>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-8 offset-2">
+        <ng-view></ng-view>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/app.js" charset="utf-8"></script>
+<script src="js/controllers/accountsCtrl.js" charset="utf-8"></script>
+<script src="js/services/db.js" charset="utf-8"></script>
+<script src="js/controllers/addCtrl.js" charset="utf-8"></script>
+<script src="js/controllers/editdeleteCtrl.js" charset="utf-8"></script>
+<script src="js/controllers/editFormCtrl.js" charset="utf-8"></script>
+</body>
+</html>
